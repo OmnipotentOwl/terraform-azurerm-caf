@@ -14,18 +14,19 @@ output "id" {
   description = "The ID of the Azure Monitor Workspace instance"
   value       = azurerm_monitor_workspace.this.id
 }
-output "query_endpoint" {
-  description = "The query endpoint for the Azure Monitor Workspace instance"
-  value       = azurerm_monitor_workspace.this.query_endpoint
-}
-output "default_data_collection_endpoint_id" {
-  description = "The default data collection endpoint ID for the Azure Monitor Workspace instance"
-  value       = azurerm_monitor_workspace.this.default_data_collection_endpoint_id
-}
-output "default_data_collection_rule_id" {
-  description = "The default data collection rule ID for the Azure Monitor Workspace instance"
-  value       = azurerm_monitor_workspace.this.default_data_collection_rule_id
-}
+# Outputs to be restored after provider version 3.85.0
+# output "query_endpoint" {
+#   description = "The query endpoint for the Azure Monitor Workspace instance"
+#   value       = azurerm_monitor_workspace.this.query_endpoint
+# }
+# output "default_data_collection_endpoint_id" {
+#   description = "The default data collection endpoint ID for the Azure Monitor Workspace instance"
+#   value       = azurerm_monitor_workspace.this.default_data_collection_endpoint_id
+# }
+# output "default_data_collection_rule_id" {
+#   description = "The default data collection rule ID for the Azure Monitor Workspace instance"
+#   value       = azurerm_monitor_workspace.this.default_data_collection_rule_id
+# }
 output "tags" {
   description = "The tags assigned to the Azure Monitor Workspace instance"
   value       = azurerm_monitor_workspace.this.tags
