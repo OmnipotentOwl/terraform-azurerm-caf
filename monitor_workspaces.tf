@@ -1,6 +1,6 @@
 module "monitor_workspaces" {
   source   = "./modules/monitoring/monitor_workspace"
-  for_each = local.shared_services.monitor_workspace
+  for_each = local.shared_services.monitor_workspaces
 
   global_settings     = local.global_settings
   client_config       = local.client_config
