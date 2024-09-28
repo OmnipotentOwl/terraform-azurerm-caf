@@ -355,6 +355,9 @@ variable "batch_pools" {
 variable "databricks_workspaces" {
   default = {}
 }
+variable "databricks_access_connectors" {
+  default = {}
+}
 variable "machine_learning_workspaces" {
   default = {}
 }
@@ -638,6 +641,9 @@ variable "vpn_sites" {
   default = {}
 }
 variable "vpn_gateway_connections" {
+  default = {}
+}
+variable "vpn_gateway_nat_rules" {
   default = {}
 }
 variable "servicebus_namespaces" {
@@ -1115,5 +1121,17 @@ variable "cosmosdb_role_definitions" {
   default = {}
 }
 variable "data_sources" {
+  default = {}
+}
+variable "maintenance_configuration" {
+  default = {}
+}
+variable "maintenance_assignment_virtual_machine" {
+  default = {}
+}
+variable "search_services" {
+  default = {}
+}
+variable "load_test" {
   default = {}
 }
